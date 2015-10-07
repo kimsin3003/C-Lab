@@ -68,7 +68,9 @@ ostream& operator<<(ostream& os, const String& s)
 
 istream& operator>>(istream& is, String& s)
 {
-	cin >> s.str;
+	char input[128];
+	cin >> input;
+	strcpy(s.str, input);
 	s.len = strlen(s.str);
 	return is;
 }

@@ -20,7 +20,11 @@ int main()
 	else
 		cout << "false" << endl;
 
-	String str5("õġ");
-	cout <<	str3 + str5 << endl;
+	String str5;
+	cin >> str5;
+	cout << str5 << endl;
+
+	String str6("õġ");
+	cout <<	str3 + str6 << endl;
 
 }
