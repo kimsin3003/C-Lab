@@ -14,7 +14,7 @@ public:
 		delete [] stack;
 	}
 
-	T Pop() {
+	T& Pop<T>() {
 		if (size == 0) {
 			cout << "stack empty\n" << endl;
 			return NULL;
@@ -23,6 +23,17 @@ public:
 		size--;
 		return result;
 	}
+	template <>
+	int Pop<int>() {
+		if (size == 0) {
+			cout << "stack empty\n" << endl;
+			return NULL;
+		}
+		int result = stack[size - 1];
+		size--;
+		return result;
+	}
+
 
 	T Top() {
 		if (size == 0) {
