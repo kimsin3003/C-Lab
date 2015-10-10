@@ -30,7 +30,12 @@ String::~String()
 
 String& String::operator+=(const String& s)
 {
-	strcat(str, s.str);
+	char* strPtr = new char[len + s.len + 1];
+	strcpy(strPtr, str);
+	strcat(strPtr, s.str);
+	delete[] str;
+	str = strPtr;
+
 	len += s.len;
 	return *this;
 }
@@ -44,9 +49,10 @@ bool String::operator==(const String & s)
 
 String String::operator+(const String & s)
 {
-	String newStr(str);
-	strcat(newStr.str, s.str);
-	newStr.len += s.len;
+	char* strPtr = new char[len + s.len + 1];
+	strcpy(strPtr, str);
+	strcat(strPtr, s.str);
+	String newStr(strPtr);
 	return newStr;
 }
 
@@ -70,7 +76,9 @@ istream& operator>>(istream& is, String& s)
 {
 	char input[128];
 	cin >> input;
+	int size = strlen(input);
+	s.str = new char[size + 1];
 	strcpy(s.str, input);
-	s.len = strlen(s.str);
+	s.len = size;
 	return is;
 }

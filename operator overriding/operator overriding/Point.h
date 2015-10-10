@@ -67,6 +67,7 @@ Point& operator+(Point& ref1, Point& ref2)
 	Point p(ref1.xpos + ref2.xpos, ref1.ypos + ref2.ypos);
 	return p;
 }
+
 // int main() {
 // 
 // 	Point p1(3, 5);

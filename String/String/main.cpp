@@ -23,8 +23,12 @@ int main()
 	String str5;
 	cin >> str5;
 	cout << str5 << endl;
-
+	
+	
+	
 	String str6("õġ");
-	cout <<	str3 + str6 << endl;
+	String str10 = str3 + str6;
+
+	cout <<	str10  << endl;
 
 }
