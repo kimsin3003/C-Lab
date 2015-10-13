@@ -13,6 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\strategy">
+      <UniqueIdentifier>{122a218d-ab26-4449-9a45-2647ef02a218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Path">
+      <UniqueIdentifier>{1fd803dc-5abc-4ea8-809f-0b61f80f601e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Office">
+      <UniqueIdentifier>{836c9a79-0130-4934-9f22-4cd0d7f8500c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FileIO">
+      <UniqueIdentifier>{8be34ae5-86e2-4d8a-9681-a6e0ffd9e5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Test">
+      <UniqueIdentifier>{59484978-fd9f-416f-a176-b3966aa83669}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -27,37 +42,73 @@
     <ClInclude Include="targetver.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="BoxOffice.h">
-      <Filter>소스 파일</Filter>
+    <ClInclude Include="Strategy.h">
+      <Filter>소스 파일\strategy</Filter>
     </ClInclude>
-    <ClInclude Include="Server.h">
-      <Filter>소스 파일</Filter>
+    <ClInclude Include="FIFO.h">
+      <Filter>소스 파일\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="LTFO.h">
+      <Filter>소스 파일\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFinder.h">
+      <Filter>소스 파일\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxOffice.h">
+      <Filter>소스 파일\Office</Filter>
     </ClInclude>
     <ClInclude Include="Passenger.h">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Office</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>소스 파일\Office</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>소스 파일\Office</Filter>
     </ClInclude>
     <ClInclude Include="FileHandler.h">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator.h">
+      <Filter>소스 파일\Test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="TicketBoxTest.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Strategy.cpp">
+      <Filter>소스 파일\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="LTFO.cpp">
+      <Filter>소스 파일\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="FIFO.cpp">
+      <Filter>소스 파일\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFinder.cpp">
+      <Filter>소스 파일\Path</Filter>
     </ClCompile>
     <ClCompile Include="BoxOffice.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Server.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Office</Filter>
     </ClCompile>
     <ClCompile Include="Passenger.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Office</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform.cpp">
+      <Filter>소스 파일\Office</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>소스 파일\Office</Filter>
     </ClCompile>
     <ClCompile Include="FileHandler.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator.cpp">
+      <Filter>소스 파일\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="TicketBoxTest.cpp">
+      <Filter>소스 파일\Test</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
